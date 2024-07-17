@@ -1,0 +1,239 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css reset above*/
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* general components styling */
+
+header {
+  height: 8vh;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  background-color: #242423;
+}
+
+.menu-icon-wrapper {
+  width: 30%;
+  font-size: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+}
+
+nav > ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav > ul > li a {
+  color: #db00b6;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #db00b6;
+}
+
+.logo-area {
+  width: 20%;
+  font-size: 2rem;
+  color: white;
+  padding: 20px 0 0 30px;
+}
+
+.logo-area:hover {
+  cursor: pointer;
+  transition: 1s ease;
+  transform-origin: left;
+  transform: scale(1.1);
+}
+
+.logo-area > span {
+  color: #db00b6;
+  text-shadow: #db00b6 0px 0px 15px;
+}
+
+/* navbar styling */
+
+@media (min-width: 1023px) and (max-width: 1354px) {
+  .logo-area {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 30px;
+  }
+
+  .logo-area span {
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 1022px) {
+  nav > ul {
+    display: none;
+  }
+
+  .logo-area {
+    width: 50%;
+  }
+
+  .menu-icon-wrapper {
+    width: 50%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+  .logo-area {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0 10px;
+  }
+
+  .logo-area span {
+    padding-left: 5px;
+  }
+}
+
+/*  responsive navbar styling */
