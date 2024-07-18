@@ -210,6 +210,75 @@ nav a:hover,
 }
 
 /* navbar styling */
+
+.about {
+  height: 60vh;
+  display: flex;
+  color: white;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    linear-gradient(225deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 50%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8));
+  background-color: #000;
+  background-blend-mode: overlay, overlay, normal;
+}
+
+.personal-image,
+.personal-info {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-info {
+  flex-direction: column;
+}
+
+.info-wrapper {
+  width: 60%;
+  height: 50%;
+  line-height: 1.5;
+}
+
+.info-wrapper h1 {
+  font-size: 3.5rem;
+}
+
+.info-wrapper > h1 span {
+  color: #db00b6;
+  text-shadow: #db00b6 0px 0px 15px;
+}
+
+.info-wrapper span:nth-child(2) {
+  font-size: 1.3rem;
+}
+
+#greece {
+  color: #0077b6;
+  font-size: 1.4rem;
+}
+
+.info-wrapper p {
+  font-size: 1.3rem;
+}
+
+.image-wrapper {
+  height: 400px;
+  width: 400px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* About section styling */
+
 @media (min-width: 1355px) {
   .side-navbar {
     display: none;
