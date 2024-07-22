@@ -4,62 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <section class="logo-area">Stathis <span>Kotanidis</span></section>
-        <div class="menu-icon-wrapper">
-          <i class="bx bx-menu menu-icon"></i>
-        </div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+    <nav id="desktop-nav">
+      <div class="logo">Stathis <span>Kotanidis</span></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-      <ul class="side-navbar hidden">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </header>
-
-    <section class="about">
-      <section class="personal-info">
-        <div class="info-wrapper">
-          <h1>Hi, i'm <span>Stathis</span>.</h1>
-          <span
-            >A software engineer based in
-            <span id="greece">Greece</span> .</span
-          >
-          <p>
-            Passionate about creating modern and responsive web applications.
-          </p>
+      </div>
+    </nav>
+    <nav id="hamburger-nav" class="hidden">
+      <div class="logo">Stathis <span>Kotanidis</span></div>
+      <div class="hamburger-menu">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </section>
-      <section class="personal-image">
-        <div class="image-wrapper">
-          <img src="images/portfolio-image.png" alt="my-image" />
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-      </section>
-    </section>
-
-    <section class="projects"></section>
-    <section class="contact"></section>
+      </div>
+    </nav>
 
     <script src="main.js"></script>
   </body>

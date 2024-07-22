@@ -1,6 +1,7 @@
-let menuBtn = document.querySelector(".menu-icon");
-let sideNavbar = document.querySelector(".side-navbar");
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".menu-icon");
 
-menuBtn.addEventListener("click", () => {
-  sideNavbar.classList.toggle("hidden");
-});
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
