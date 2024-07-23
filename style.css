@@ -186,6 +186,10 @@ a:hover {
   display: inline-block;
   font-size: 3rem;
   font-weight: 400;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(19, end), cursor 1s step-end infinite alternate;
 }
 
 .about-me-container p {
@@ -222,5 +226,23 @@ a:hover {
 
   #hamburger-nav {
     display: flex;
+  }
+}
+
+/* Animations*/
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 60%;
   }
 }
