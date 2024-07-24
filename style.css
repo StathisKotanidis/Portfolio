@@ -390,7 +390,7 @@ footer p {
 }
 
 /* Media Queries*/
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   body {
     height: 180vh;
     display: flex;
