@@ -263,8 +263,8 @@ a:hover {
 }
 
 .projects img {
-  width: 80%;
-  height: 50%;
+  width: 90%;
+  height: 60%;
   background-color: white;
   border-radius: 20px;
 }
@@ -309,7 +309,6 @@ a:hover {
 }
 
 form {
-  /* border: 1px solid green; */
   width: 40%;
   height: 80%;
   display: flex;
@@ -333,6 +332,7 @@ form textarea {
   width: 50%;
   padding: 20px;
   margin-top: 20px;
+  border-radius: 20px;
 }
 
 form button {
@@ -346,6 +346,33 @@ form button {
 form button:hover {
   border: 2px solid #db00b6;
   cursor: pointer;
+}
+
+/* Footer styling*/
+
+footer {
+  height: 10vh;
+  background-color: #242423;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+footer ul li {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+footer p {
+  color: white;
 }
 
 /* Media Queries*/
