@@ -390,7 +390,7 @@ footer p {
 }
 
 /* Media Queries*/
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   body {
     height: 180vh;
     display: flex;
@@ -400,6 +400,10 @@ footer p {
 
   #hamburger-nav {
     height: 10vh;
+  }
+
+  .logo {
+    font-size: 1.5rem;
   }
 
   #about {
@@ -415,8 +419,8 @@ footer p {
   }
 
   .image-section img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
 
   .about-me {
@@ -426,7 +430,7 @@ footer p {
 
   .about-me-container {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 40px;
   }
 
   .about-me-container h1 {
