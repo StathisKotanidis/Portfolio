@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -299,13 +304,19 @@ a:hover {
   text-align: center;
 }
 
-#contact h2 {
+.contact-container h2 {
   color: white;
   font-size: 2.5rem;
 }
 
-#contact span {
+.contact-container span:first-child {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.contact-container span:last-child {
   color: #db00b6;
+  font-size: 2.5rem;
 }
 
 form {
@@ -379,6 +390,157 @@ footer p {
 }
 
 /* Media Queries*/
+@media (max-width: 320px) {
+  body {
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+  }
+
+  #hamburger-nav {
+    height: 10vh;
+  }
+
+  #about {
+    flex-direction: column;
+    height: 45vh; /* htan 60*/
+    width: 100%;
+  }
+
+  .image-section {
+    height: 50%;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .image-section img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-me {
+    height: 50%;
+    width: 100%;
+  }
+
+  .about-me-container {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .about-me-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .about-me-container p {
+    font-size: 1rem;
+  }
+
+  #projects {
+    height: 85vh;
+  }
+
+  .description span {
+    font-size: 0.7rem;
+  }
+
+  .description h2 {
+    font-size: 1.1rem;
+  }
+
+  .projects-container {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .projects {
+    width: 80%;
+    height: 30%;
+  }
+
+  .projects h3 {
+    font-size: 1rem;
+  }
+
+  .buttons-container button {
+    width: 100px;
+    height: 25px;
+    font-size: 0.9rem;
+  }
+
+  #contact {
+    height: 40vh;
+  }
+
+  .contact-container {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .contact-container span:first-child {
+    font-size: 0.6rem;
+  }
+
+  .contact-container span:last-child {
+    font-size: 1.1rem;
+  }
+
+  form {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  form input {
+    width: 70%;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0;
+  }
+
+  form textarea {
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0;
+  }
+  form button {
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 0;
+    font-size: 0.8rem;
+  }
+
+  footer {
+    height: 10vh;
+    width: 100%;
+  }
+
+  footer ul {
+    width: 80%;
+  }
+
+  footer ul li {
+    font-size: 1.1rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
 
 @media (max-width: 1200px) {
   #desktop-nav {
