@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio | Stathis Kotanidis</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -15,122 +15,125 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Stathis <span>Kotanidis</span></div>
-      <div>
-        <ul class="nav-links">
+    <div class="grid-container">
+      <nav class="desktop-nav">
+        <div class="logo">Stathis <span>Kotanidis</span></div>
+        <div>
+          <ul class="navlinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="mobile-nav">
+        <div class="logo">Stathis <span>Kotanidis</span></div>
+        <div class="mobile-menu">
+          <div class="menu-icon">
+            <i class="bx bx-menu"></i>
+          </div>
+          <div class="menu-links hidden">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="about">
+        <div class="image-section">
+          <img src="images/portfolio-avatar.png" alt="my-image" />
+        </div>
+
+        <div class="about-me">
+          <h1>Hello, I'm <span id="my-name">Stathis</span>.</h1>
+          <p>A Software engineer, based in <span id="greece">Greece</span></p>
+          <p>
+            Passionate about creating modern and responsive web applications.
+          </p>
+          <div class="socials-wrapper">
+            <a href="https://github.com/StathisKotanidis" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href=""><i class="bx bxl-linkedin-square"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="description">
+          <span>Some of my recent</span>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects-container">
+          <div class="projects project-one">
+            <img src="images/calculator.png" alt="calculator-image" />
+            <h3>Calculator</h3>
+            <div class="buttons-container">
+              <button id="calculator-source">Github</button>
+              <button id="calculator-live">Live Demo</button>
+            </div>
+          </div>
+
+          <div class="projects project-two">
+            <img src="images/restaurant.png" alt="restaurant-image" />
+            <h3>Restaurant Website</h3>
+            <div class="buttons-container">
+              <button id="restaurant-source">Github</button>
+              <button id="restaurant-live">Live Demo</button>
+            </div>
+          </div>
+
+          <div class="projects project-three">
+            <img src="images/hair-saloon.png" alt="hair-saloon-image" />
+            <h3>Hair Saloon Website</h3>
+            <div class="buttons-container">
+              <button>Github</button>
+              <button>Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-container">
+          <span>Let's get in touch</span>
+          <h2>Contact <span>Me</span></h2>
+        </div>
+
+        <form action="">
+          <input type="text" placeholder="Full name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Subject" />
+          <textarea
+            name=""
+            id="users-email"
+            placeholder="Your message..."
+          ></textarea>
+
+          <button>Send Message</button>
+        </form>
+      </section>
+
+      <footer>
+        <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav" class="hidden">
-      <div class="logo">Stathis <span>Kotanidis</span></div>
-      <div class="hamburger-menu">
-        <div class="menu-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
 
-    <section id="about">
-      <div class="image-section">
-        <img src="images/portfolio-avatar.png" alt="my-image" />
-      </div>
-
-      <div class="about-me">
-        <div class="about-me-container">
-          <h1>Hello, I'm <span id="my-name">Stathis</span>.</h1>
-          <p>A Software engineer, based in <span id="greece">Greece</span></p>
-          <p>
-            Passionate about creating modern and responsive web applications
-          </p>
-          <a href="https://github.com/StathisKotanidis" target="_blank"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a href=""><i class="bx bxl-linkedin-square"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="description">
-        <span>Some of my recent</span>
-        <h2>Projects</h2>
-      </div>
-
-      <div class="projects-container">
-        <div class="projects project-one">
-          <img src="images/calculator.png" alt="calculator-image" />
-          <h3>Calculator</h3>
-          <div class="buttons-container">
-            <button id="calculator-source">Github</button>
-            <button id="calculator-live">Live Demo</button>
-          </div>
-        </div>
-
-        <div class="projects project-two">
-          <img src="images/restaurant.png" alt="restaurant-image" />
-          <h3>Restaurant Website</h3>
-          <div class="buttons-container">
-            <button>Github</button>
-            <button>Live Demo</button>
-          </div>
-        </div>
-
-        <div class="projects project-three">
-          <img src="images/hair-saloon.png" alt="hair-saloon-image" />
-          <h3>Hair Saloon Website</h3>
-          <div class="buttons-container">
-            <button>Github</button>
-            <button>Live Demo</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="contact-container">
-        <span>Let's get in touch</span>
-        <h2>Contact <span>Me</span></h2>
-      </div>
-
-      <form action="">
-        <input type="text" placeholder="Full name" />
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Subject" />
-        <textarea
-          name=""
-          id="users-email"
-          placeholder="Your message..."
-        ></textarea>
-
-        <button>Send Message</button>
-      </form>
-    </section>
-
-    <footer>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <p>
-        <i class="bx bx-copyright"></i>
-        <span>Stathis Kotanidis | All Rights Reserved </span>
-      </p>
-    </footer>
+        <p>
+          <i class="bx bx-copyright"></i>
+          <span>Stathis Kotanidis | All Rights Reserved </span>
+        </p>
+      </footer>
+    </div>
 
     <script src="main.js"></script>
   </body>
