@@ -1,0 +1,85 @@
+@media (min-width: 480px) {
+  /* Navbar section styling */
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .logo {
+    flex-basis: 40%;
+  }
+
+  .navlinks {
+    flex-basis: 60%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* About section styling */
+
+  .image-section {
+    padding: 2rem 0;
+  }
+
+  .about-me h1 {
+    font-size: 2rem;
+  }
+
+  .about-me p {
+    font-size: 1.2rem;
+  }
+
+  .socials-wrapper {
+    width: 20%;
+  }
+
+  /* Projects section styling */
+
+  .description h2 {
+    font-size: 2rem;
+  }
+
+  .projects-container {
+    gap: 1.5rem;
+  }
+
+  .projects {
+    gap: 1rem;
+  }
+
+  /* Contact section styling */
+
+  .contact-container h2 {
+    font-size: 2rem;
+  }
+
+  form input,
+  form button {
+    padding: 10px;
+  }
+
+  /* Footer stying */
+
+  footer {
+    padding: 1.5rem;
+  }
+
+  footer ul a {
+    font-size: 1.5rem;
+  }
+
+  .copyrights span {
+    font-size: 1.2rem;
+  }
+}
+
+/* @media (min-width: 800px){
+
+} */
