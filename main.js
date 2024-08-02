@@ -1,8 +1,17 @@
 let menuBtn = document.querySelector(".menu-icon");
 let menuLinks = document.querySelector(".menu-links");
 menuBtn.addEventListener("click", () => {
-  console.log("works");
   menuLinks.classList.toggle("hidden");
+});
+
+// To hide the navbar after i clicked on a link
+
+let mobileLis = document.querySelectorAll(".menu-links ul li");
+
+mobileLis.forEach((element) => {
+  element.addEventListener("click", () => {
+    menuLinks.classList.add("hidden");
+  });
 });
 
 let calculatorLiveBtn = document.querySelector("#calculator-live");
