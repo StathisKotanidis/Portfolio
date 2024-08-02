@@ -189,7 +189,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em 0 1em 0;
+  padding: 1em 0;
 }
 
 .description span {
