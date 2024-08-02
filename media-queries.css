@@ -68,7 +68,11 @@
   /* Footer stying */
 
   footer {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  footer ul {
+    padding-left: 40px;
   }
 
   footer ul a {
@@ -177,6 +181,15 @@
   form button {
     grid-row: 3/4;
   }
+
+  /* Footer section styling */
+  footer {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  footer ul {
+    padding-left: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -244,6 +257,10 @@
     padding: 2em 2em 0 2em;
   }
 
+  footer ul {
+    padding-left: 50px;
+  }
+
   footer ul a {
     font-size: 2rem;
   }
@@ -253,5 +270,72 @@
   }
 }
 
-/* @media (min-width: 1400px) {
-} */
+@media (min-width: 1400px) {
+  /* Navbar section styling */
+  .desktop-nav {
+    padding: 2rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .navlinks a {
+    font-size: 2rem;
+  }
+
+  /* About section styling */
+
+  .image-section img {
+    width: 500px;
+  }
+
+  .about-me h1 {
+    font-size: 3.5rem;
+  }
+
+  .about-me p {
+    font-size: 2rem;
+  }
+
+  .socials-wrapper a i {
+    font-size: 4rem;
+  }
+
+  /* Projects section styling */
+
+  .description span {
+    font-size: 1.2rem;
+  }
+
+  .description h2 {
+    font-size: 3.5rem;
+  }
+
+  .buttons-container button {
+    padding: 15px 30px;
+  }
+
+  /* Contact section styling */
+
+  #contact {
+    padding: 3rem;
+  }
+
+  .contact-container span {
+    font-size: 1.2rem;
+  }
+
+  .contact-container h2 {
+    font-size: 3.5rem;
+  }
+
+  form input {
+    width: 400px;
+  }
+
+  form textarea,
+  form button {
+    width: 300px;
+  }
+}
