@@ -80,6 +80,105 @@
   }
 }
 
-/* @media (min-width: 800px){
+@media (min-width: 800px) {
+  /* Navbar section styling */
+
+  .desktop-nav {
+    padding: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .navlinks a {
+    font-size: 1.4rem;
+  }
+
+  /* About section styling */
+
+  #about {
+    flex-direction: row;
+    padding: 1rem;
+  }
+
+  .image-section {
+    flex-basis: 40%;
+  }
+
+  .image-section img {
+    width: 300px;
+  }
+
+  .about-me {
+    flex-basis: 60%;
+  }
+
+  .about-me h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-me p {
+    font-size: 1.3rem;
+  }
+
+  .socials-wrapper {
+    width: 30%;
+  }
+
+  .socials-wrapper a i {
+    font-size: 3rem;
+  }
+
+  /* Projects section styling */
+
+  .projects-container {
+    flex-direction: row;
+    padding: 2rem 1rem;
+    justify-content: space-around;
+  }
+
+  .projects {
+    padding: 1.2rem;
+  }
+
+  .buttons-container button {
+    padding: 5px 15px;
+  }
+
+  /* Contact section styling */
+
+  form {
+    display: grid;
+    grid: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  form input:first-of-type {
+    grid-row: 1/2;
+    height: 40px;
+  }
+
+  form input:nth-of-type(2n) {
+    grid-row: 2/3;
+    height: 40px;
+  }
+
+  form input:last-of-type {
+    grid-row: 3/4;
+  }
+
+  form textarea {
+    grid-row: span 2;
+    height: 120px;
+  }
+
+  form button {
+    grid-row: 3/4;
+  }
+}
+
+/* @media (mid-width: 1024px){
 
 } */
