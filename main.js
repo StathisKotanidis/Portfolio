@@ -56,7 +56,7 @@ hairSalonGitBtn.addEventListener("click", () => {
 // Form submission
 
 function handleFormSubmission(event) {
-  event.preventDefault(); // Prevent the form from submitting the traditional way
+  event.preventDefault();
 
   const formData = new FormData(event.target);
 
@@ -80,3 +80,5 @@ function handleFormSubmission(event) {
 
   return false;
 }
+
+console.log(...formData.entries()); // test
