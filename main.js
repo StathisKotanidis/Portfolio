@@ -41,3 +41,14 @@ restaurantGitBtn.addEventListener("click", () => {
     "_blank"
   );
 });
+
+let hairSalonLiveBtn = document.querySelector("#hair-salon-live");
+let hairSalonGitBtn = document.querySelector("#hair-salon-source");
+
+hairSalonLiveBtn.addEventListener("click", () => {
+  window.open("https://stathiskotanidis.github.io/Hair-Salon/", "_blank");
+});
+
+hairSalonGitBtn.addEventListener("click", () => {
+  window.open("https://github.com/StathisKotanidis/Hair-Salon", "_blank");
+});
