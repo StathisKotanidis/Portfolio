@@ -178,6 +178,10 @@ a:hover {
   font-size: 2rem;
 }
 
+.socials-wrapper a:hover {
+  transform: scale(1.2);
+}
+
 /* Projects section (mobile desing) */
 
 #projects {
@@ -301,6 +305,14 @@ form input:focus::placeholder {
 
 form textarea:focus {
   border-radius: 10px;
+}
+
+#message-popup {
+  display: none;
+  color: white;
+  background-color: #db00b6;
+  padding: 10px;
+  border-radius: 10%;
 }
 
 /* Footer section styling (mobile design) */

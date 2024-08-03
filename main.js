@@ -52,3 +52,31 @@ hairSalonLiveBtn.addEventListener("click", () => {
 hairSalonGitBtn.addEventListener("click", () => {
   window.open("https://github.com/StathisKotanidis/Hair-Salon", "_blank");
 });
+
+// Form submission
+
+function handleFormSubmission(event) {
+  event.preventDefault(); // Prevent the form from submitting the traditional way
+
+  const formData = new FormData(event.target);
+
+  fetch("/", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        document.getElementById("message-popup").style.display = "block";
+        event.target.reset();
+      } else {
+        alert(
+          "There was an error sending your message. Please try again later."
+        );
+      }
+    })
+    .catch((error) => {
+      alert("There was an error sending your message. Please try again later.");
+    });
+
+  return false;
+}

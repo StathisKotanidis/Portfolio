@@ -59,7 +59,11 @@
             <a href="https://github.com/StathisKotanidis" target="_blank"
               ><i class="bx bxl-github"></i
             ></a>
-            <a href=""><i class="bx bxl-linkedin-square"></i></a>
+            <a
+              href="https://www.linkedin.com/in/stathis-kotanidis/"
+              target="_blank"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -106,18 +110,31 @@
           <h2>Contact <span>Me</span></h2>
         </div>
 
-        <form action="">
-          <input type="text" placeholder="Full name" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Subject" />
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+
+          <!-- Honeypot field to prevent spam -->
+          <p style="display: none">
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+          <input type="text" placeholder="Full name" name="name" required />
+          <input type="email" placeholder="Email" name="'email" required />
+          <input type="text" placeholder="Subject" name="subject" />
           <textarea
             name=""
             id="users-email"
             placeholder="Your message..."
           ></textarea>
 
-          <button>Send Message</button>
+          <button type="submit">Send Message</button>
         </form>
+
+        <div id="message-popup"><span>Message sent successfully!</span></div>
       </section>
 
       <footer>
