@@ -90,6 +90,7 @@ a:hover {
 
 .logo {
   font-size: 1.2rem;
+  color: white;
 }
 
 .logo span {
@@ -110,7 +111,7 @@ a:hover {
 .logo:hover {
   cursor: default;
   transition: 1s ease;
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 /* About section (mobile design) */
