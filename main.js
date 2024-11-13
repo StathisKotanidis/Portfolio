@@ -14,15 +14,14 @@ mobileLis.forEach((element) => {
   });
 });
 
-let calculatorLiveBtn = document.querySelector("#calculator-live");
-let calculatorGitBtn = document.querySelector("#calculator-source");
+let quizwizLiveBtn = document.querySelector("#quizwiz-live");
+let quizwizGitBtn = document.querySelector("#quizwiz-source");
 
-calculatorLiveBtn.addEventListener("click", () => {
-  window.open("https://stathiskotanidis.github.io/calculator/", "_blank");
+quizwizLiveBtn.addEventListener("click", () => {
+  window.open("https://stathiskotanidis-quizwiz.netlify.app/", "_blank");
 });
-
-calculatorGitBtn.addEventListener("click", () => {
-  window.open("https://github.com/StathisKotanidis/calculator", "_blank");
+quizwizGitBtn.addEventListener("click", () => {
+  window.open("https://github.com/StathisKotanidis/QuizWiz", "_blank");
 });
 
 let restaurantLiveBtn = document.querySelector("#restaurant-live");
@@ -81,4 +80,4 @@ function handleFormSubmission(event) {
   return false;
 }
 
-console.log(...formData.entries()); // test
+console.log(...formData.entries());
