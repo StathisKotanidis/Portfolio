@@ -1,158 +1,812 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  data-safeMod="false"
+  data-autoHideScrollbar="true"
+  data-safeModPageInAnimation="fadeIn"
+  data-inAnimation="fadeInUp"
+  data-outAnimation="fadeOutDownBig"
+  data-cover-h1-tune=".85"
+  data-cover-h2-tune="2.3"
+  data-cover-h3-tune=".6"
+  data-cover-h3-span-tune=".8"
+  data-twitter-name="pixelwarsdesign"
+>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Stathis Kotanidis</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="description"
+      content="BookCard - Responsive HTML5 vCard Template"
     />
-    <link rel="icon" href="images/favicon.png" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media-queries.css" />
+    <meta name="keywords" content="vcard, html5, portfolio" />
+    <meta name="author" content="Pixelwars" />
+
+    <title>Portfolio || Stathis Kotanidis</title>
+
+    <!-- FAV and TOUCH ICONS -->
+    <link rel="shortcut icon" href="images/ico/favicon.png" />
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png" />
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <!--[if lte IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/selectivizr-min.js"></script>
+    <![endif]-->
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Nixie+One|Raleway:200,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tulpen+One|Sacramento"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/book.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/jquery.fancybox-1.3.4.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <link
+      class="cover-skin"
+      rel="stylesheet"
+      type="text/css"
+      href="css/skins/cover/standart.css"
+    />
+    <link
+      class="base-skin"
+      rel="stylesheet"
+      type="text/css"
+      href="css/skins/base/clean.css"
+    />
+    <link
+      class="paper-bg-skin"
+      rel="stylesheet"
+      type="text/css"
+      href="css/skins/paper-bg/cream-dust.css"
+    />
+    <link
+      class="body-bg-skin"
+      rel="stylesheet"
+      type="text/css"
+      href="css/skins/body-bg/desk.css"
+    />
   </head>
+
   <body>
-    <div class="grid-container">
-      <nav class="desktop-nav">
-        <div class="logo">Stathis <span>Kotanidis</span></div>
-        <ul class="navlinks">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="mobile-nav">
-        <div class="logo">Stathis <span>Kotanidis</span></div>
-        <div class="mobile-menu">
-          <div class="menu-icon">
-            <i class="bx bx-menu"></i>
-          </div>
-          <div class="menu-links hidden">
+    <!-- ************************ MAIN -->
+    <section class="main">
+      <!-- .rm-container -->
+      <div id="rm-container" class="rm-container rm-closed">
+        <!-- HEADER -->
+        <header id="header">
+          <!-- NAV MENU -->
+          <nav>
             <ul>
-              <li class="mobile-nav-lis"><a href="#about">About</a></li>
-              <li class="mobile-nav-lis"><a href="#projects">Projects</a></li>
-              <li class="mobile-nav-lis"><a href="#contact">Contact</a></li>
+              <li><a href="#/home"></a></li>
+              <li><a href="#/resume"></a></li>
+              <li><a href="#/portfolio"></a></li>
+              <li><a href="#/contact"></a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </nav>
+          <!-- NAV MENU -->
+        </header>
+        <!-- HEADER -->
 
-      <section id="about">
-        <div class="image-section">
-          <img src="images/portfolio-avatar.png" alt="my-image" />
-        </div>
+        <!-- .rm-wrapper -->
+        <div class="rm-wrapper">
+          <!-- .rm-cover -->
+          <div class="rm-cover">
+            <!-- COVER PAGE -->
+            <div id="home" class="rm-front page">
+              <!-- .antiscroll-wrap -->
+              <div class="antiscroll-wrap">
+                <!-- .antiscroll-inner -->
+                <div class="antiscroll-inner">
+                  <!-- COVER IMAGE -->
+                  <div class="cover">
+                    <!-- cover-image-holder -->
+                    <div class="cover-image-holder">
+                      <img src="images/site/cover.png" alt="cover-image" />
+                    </div>
+                    <!-- cover-image-holder -->
 
-        <div class="about-me">
-          <h1>Hello, I'm <span id="my-name">Stathis</span>.</h1>
-          <p>A Software engineer, based in <span id="greece">Greece</span></p>
-          <p>
-            Passionate about creating modern and responsive web applications.
-          </p>
-          <div class="socials-wrapper">
-            <a href="https://github.com/StathisKotanidis" target="_blank"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/stathis-kotanidis/"
-              target="_blank"
-              ><i class="bx bxl-linkedin-square"></i
-            ></a>
-          </div>
-        </div>
-      </section>
+                    <!-- title -->
+                    <h1>Hi, I'm Stathis</h1>
+                    <!-- title -->
 
-      <section id="projects">
-        <div class="description">
-          <span>Some of my recent</span>
-          <h2>Projects</h2>
-        </div>
+                    <!-- slogan -->
+                    <h2>A Software Engineer</h2>
+                    <!-- slogan -->
 
-        <div class="projects-container">
-          <div class="projects project-one">
-            <img src="images/quizwiz.png" alt="quizwiz-image" />
-            <h3>QuizWiz</h3>
-            <div class="buttons-container">
-              <button id="quizwiz-source">Github</button>
-              <button id="quizwiz-live">Live Demo</button>
+                    <!-- extra titles -->
+                    <h3><span>I AM FROM</span> GREECE</h3>
+                    <h3><span>I BUILD</span> Web Applications</h3>
+                    <!-- extra titles --
+                                        
+                                        <!-- open link -->
+                    <a href="#/resume" class="rm-button-open ribbon">
+                      <span class="ribbon-stitches-top"></span>
+                      <strong class="ribbon-content">OPEN</strong>
+                      <span class="ribbon-stitches-bottom"></span>
+                    </a>
+                    <!-- open link -->
+                  </div>
+                  <!-- COVER IMAGE -->
+                </div>
+                <!-- .antiscroll-inner -->
+              </div>
+              <!-- .antiscroll-wrap -->
             </div>
-          </div>
+            <!-- COVER PAGE -->
 
-          <div class="projects project-two">
-            <img src="images/restaurant.png" alt="restaurant-image" />
-            <h3>Restaurant Website</h3>
-            <div class="buttons-container">
-              <button id="restaurant-source">Github</button>
-              <button id="restaurant-live">Live Demo</button>
+            <!-- RESUME PAGE -->
+            <div id="resume" class="rm-back page">
+              <!-- .antiscroll-wrap -->
+              <div class="antiscroll-wrap">
+                <!-- .antiscroll-inner -->
+                <div class="antiscroll-inner">
+                  <!-- CONTENT -->
+                  <div class="content">
+                    <h2><span>RESUME</span></h2>
+
+                    <h4 class="about-text">
+                      Leveraging a proven background in construction, including
+                      work on some of the largest and most impactful projects in
+                      Greece, I bring exceptional dedication, determination, and
+                      success in delivering under tight schedules and
+                      challenging environments. Transitioning these skills into
+                      web development, I excel at designing and building
+                      efficient, user-friendly web applications with React.js,
+                      combining technical expertise and creativity to craft
+                      digital solutions that meet user needs and exceed
+                      expectations.
+                    </h4>
+
+                    <h3><span>EMPLOYMENT</span></h3>
+
+                    <!-- EMPLOYMENT -->
+                    <div class="history-group">
+                      <!-- .history-unit -->
+                      <div class="history-unit">
+                        <h4 class="work-time">Present</h4>
+
+                        <div class="work-desc">
+                          <h4>Software Engineer</h4>
+                          <h5>100Devs</h5>
+                          <ul>
+                            <li>
+                              Developed and deployed 10+ responsive web
+                              applications, improving page load speed by 15%
+                              through optimized image compression, lazy loading,
+                              and code refactoring, while enhancing user
+                              experience using HTML, CSS, and JavaScript
+                            </li>
+                            <li>
+                              Solved 100+ coding challenges by implementing
+                              optimal data structures and best practices,
+                              improving efficiency and code quality
+                            </li>
+                            <li>
+                              Applied Big O analysis to identify and refactor
+                              inefficient algorithms, achieving a 20%
+                              improvement in runtime efficiency
+                            </li>
+                            <li>
+                              Designed reusable components for web applications,
+                              reducing development time by 10% and ensuring
+                              consistent UI/UX across multiple projects
+                            </li>
+                            <li>
+                              Reviewed and analyzed code from 5+ developers to
+                              ensure adherence to best practices, improve
+                              overall code quality, and support efficient
+                              project delivery within collaborative team
+                              environments
+                            </li>
+                            <li>
+                              Strengthened team success by leading feedback
+                              sessions and collaborative discussions, reducing
+                              code review time by 20% and implementing solutions
+                              that enhanced code maintainability and team
+                              efficiency
+                            </li>
+                            <li>
+                              Established a culture of open communication
+                              through regular discussion forums focused on
+                              technical challenges faced daily; this initiative
+                              not only strengthened teamwork but led also to
+                              greater accountability within individual roles
+                              among peers engaged
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- .history-unit -->
+                    </div>
+                    <!-- EMPLOYMENT -->
+
+                    <h3><span>EDUCATION</span></h3>
+
+                    <!-- EDUCATION -->
+                    <div class="history-group">
+                      <!-- .history-unit -->
+                      <div class="history-unit">
+                        <h4 class="work-time">Present</h4>
+
+                        <div class="work-desc">
+                          <h4>Msc in Computer Science and Engineering</h4>
+                          <h5>University of Ioannina</h5>
+                        </div>
+                      </div>
+                      <!-- .history-unit -->
+                    </div>
+                    <!-- EDUCATION -->
+
+                    <!-- DOWNLOAD BUTTON -->
+                    <!-- <div class="launch">
+                      <a href="#" class="btn">DOWNLOAD CV</a>
+                    </div> -->
+                    <!-- DOWNLOAD BUTTON -->
+
+                    <h3><span>DEVELOPMENT SKILLS</span></h3>
+
+                    <!-- DEV SKILLS -->
+                    <div class="skill-group">
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>HTML5</h4>
+                        <div class="bar" data-percent="100">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>CSS3</h4>
+                        <div class="bar" data-percent="100">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>Javascript</h4>
+                        <div class="bar" data-percent="100">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>React.js</h4>
+                        <div class="bar" data-percent="100">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>Tailwind CSS</h4>
+                        <div class="bar" data-percent="100">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>Git</h4>
+                        <div class="bar" data-percent="100">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>Data Structures</h4>
+                        <div class="bar" data-percent="80">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>Next.js</h4>
+                        <div class="bar" data-percent="50">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>Supabase</h4>
+                        <div class="bar" data-percent="50">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+                    </div>
+                    <!-- DEV SKILLS -->
+
+                    <h3><span>SOFT SKILLS</span></h3>
+
+                    <!-- DESIGN SKILLS -->
+                    <div class="skill-group">
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>Teamwork</h4>
+                        <div class="bar" data-percent="100">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>Problem Solving</h4>
+                        <div class="bar" data-percent="100">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>Communication</h4>
+                        <div class="bar" data-percent="100">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+
+                      <!-- .skill-unit -->
+                      <div class="skill-unit">
+                        <h4>Time management</h4>
+                        <div class="bar" data-percent="100">
+                          <div class="progress"></div>
+                        </div>
+                      </div>
+                      <!-- .skill-unit -->
+                    </div>
+                    <!-- DESIGN SKILLS -->
+                  </div>
+                  <!-- CONTENT -->
+                </div>
+                <!-- .antiscroll-inner -->
+              </div>
+              <!-- .antiscroll-wrap -->
+
+              <div class="rm-overlay"></div>
             </div>
+            <!-- RESUME PAGE -->
           </div>
+          <!-- /rm-cover -->
 
-          <div class="projects project-three">
-            <img src="images/hair-salon.png" alt="hair-salon-image" />
-            <h3>Hair Salon Website</h3>
-            <div class="buttons-container">
-              <button id="hair-salon-source">Github</button>
-              <button id="hair-salon-live">Live Demo</button>
+          <!-- PORTFOLIO PAGE -->
+          <div id="portfolio" class="rm-middle portfolio page">
+            <!-- .rm-inner -->
+            <div class="rm-inner">
+              <!-- .antiscroll-wrap -->
+              <div class="antiscroll-wrap">
+                <!-- .antiscroll-inner -->
+                <div class="antiscroll-inner">
+                  <!-- CONTENT -->
+                  <div class="content">
+                    <h2><span>PORTFOLIO</span></h2>
+
+                    <!--FILTERS-->
+                    <ul id="filters">
+                      <li class="current">
+                        <a href="#" data-filter="*">ALL</a>
+                      </li>
+                      <li><a href="#" data-filter=".design">DESIGN</a></li>
+                      <li><a href="#" data-filter=".coding">CODING</a></li>
+                    </ul>
+                    <!--FILTERS-->
+
+                    <!-- PORTFOLIO -->
+                    <div class="portfolio-items">
+                      <!-- portfolio-item -->
+                      <div class="coding hentry">
+                        <div class="media-box">
+                          <img
+                            src="images/portfolio/culinairy-cover.png"
+                            alt="portfolio-post"
+                          />
+                          <div class="mask">
+                            <a href="portfolio-item-03.html" class="ajax"></a>
+                          </div>
+                        </div>
+                        <h4>culinAIry</h4>
+                        <p class="category">
+                          SPA Web Application made with React.js
+                        </p>
+                      </div>
+                      <!-- portfolio-item -->
+
+                      <!-- portfolio-item -->
+                      <div class="coding hentry">
+                        <div class="media-box">
+                          <img
+                            src="images/portfolio/quizwiz-cover.png"
+                            alt="portfolio-post"
+                          />
+                          <div class="mask">
+                            <a href="portfolio-item-02.html" class="ajax"></a>
+                          </div>
+                        </div>
+                        <h4>QuizWiz</h4>
+                        <p class="category">
+                          SPA Web Application made with React.js
+                        </p>
+                      </div>
+                      <!-- portfolio-item -->
+
+                      <!-- portfolio-item -->
+                      <div class="coding hentry">
+                        <div class="media-box">
+                          <img
+                            src="images/portfolio/tempify-cover.png"
+                            alt="portfolio-post"
+                          />
+                          <div class="mask">
+                            <a href="portfolio-item-01.html" class="ajax"></a>
+                          </div>
+                        </div>
+                        <h4>Tempify</h4>
+                        <p class="category">
+                          Web Apllication made with JavaScript
+                        </p>
+                      </div>
+                      <!-- portfolio-item -->
+
+                      <!-- portfolio-item - lightbox image -->
+                      <div class="design image hentry">
+                        <div class="media-box">
+                          <img
+                            src="images/portfolio/flavor-fusion-cover.png"
+                            alt="portfolio-post"
+                          />
+                          <div class="mask">
+                            <!-- lightbox - image -->
+                            <a
+                              href="images/portfolio/flavor-fusion1.png"
+                              title="Flavor Fusion Restaurant"
+                              data-lightbox-gallery="fancybox-item-01"
+                              class="lightbox"
+                            ></a>
+                            <!-- lightbox - image -->
+                          </div>
+                        </div>
+                        <h4>Flavor Fusion</h4>
+                        <p class="category">A restaurant website</p>
+                      </div>
+                      <!-- portfolio-item - lightbox image -->
+
+                      <!-- portfolio-item - lightbox image -->
+                      <div class="design image hentry">
+                        <div class="media-box">
+                          <img
+                            src="images/portfolio/serenity-scissors-cover.png"
+                            alt="portfolio-post"
+                          />
+                          <div class="mask">
+                            <!-- lightbox - image -->
+                            <a
+                              href="images/portfolio/serenity-scissors1.png"
+                              title="Flavor Fusion Restaurant"
+                              data-lightbox-gallery="fancybox-item-01"
+                              class="lightbox"
+                            ></a>
+                            <!-- lightbox - image -->
+                          </div>
+                        </div>
+                        <h4>Serenity Scissors</h4>
+                        <p class="category">A hair saloon website</p>
+                      </div>
+                      <!-- portfolio-item - lightbox image -->
+                    </div>
+                    <!-- PORTFOLIO -->
+                  </div>
+                  <!-- CONTENT -->
+                </div>
+                <!-- .antiscroll-inner -->
+              </div>
+              <!-- .antiscroll-wrap -->
+
+              <div class="rm-overlay"></div>
             </div>
+            <!-- /rm-inner -->
           </div>
+          <!-- /rm-middle -->
+          <!-- PORTFOLIO PAGE -->
+
+          <!-- RIGHT SIDE -->
+          <div class="rm-right">
+            <!-- .rm-front -->
+            <div class="rm-front">
+              <!-- BACK COVER IMAGE -->
+              <div class="cover">
+                <!-- cover-image-holder -->
+                <div class="cover-image-holder">
+                  <img src="images/site/cover-2.jpg" alt="cover-image" />
+                </div>
+                <!-- cover-image-holder -->
+              </div>
+              <!-- BACK COVER IMAGE -->
+            </div>
+            <!-- .rm-front -->
+
+            <!-- CONTACT PAGE -->
+            <div id="contact" class="rm-back page">
+              <!-- .antiscroll-wrap -->
+              <div class="antiscroll-wrap">
+                <!-- .antiscroll-inner -->
+                <div class="antiscroll-inner">
+                  <!-- CONTENT -->
+                  <div class="content">
+                    <h2><span>CONTACT</span></h2>
+
+                    <p class="center">
+                      Please feel free to contact me about anything.
+                    </p>
+
+                    <h3><span>LET'S CONNECT</span></h3>
+
+                    <!-- SOCIAL -->
+                    <ul class="social">
+                      <li>
+                        <a
+                          class="linkedin"
+                          href="https://www.linkedin.com/in/stathis-kotanidis/"
+                          target="_blank"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          class="github"
+                          href="https://github.com/StathisKotanidis"
+                          target="_blank"
+                        ></a>
+                      </li>
+                    </ul>
+                    <!-- SOCIAL -->
+
+                    <h3><span>DROP ME A MESSAGE!</span></h3>
+
+                    <!-- .contact-form -->
+                    <div class="contact-form">
+                      <!-- LETTER -->
+                      <div class="letter cf">
+                        <div class="stamp">
+                          <img src="images/site/stamp-image.png" alt="stamp" />
+                        </div>
+
+                        <div class="letter-info">
+                          <h4>Stathis Kotanidis</h4>
+                          <p>
+                            <a href="#"><i>stathiskotanidhs@gmail.com</i></a>
+                          </p>
+                          <p>- Komotini, Grecce</p>
+                        </div>
+                      </div>
+                      <!-- LETTER -->
+
+                      <!-- modify this form HTML and place wherever you want your form -->
+                      <!-- Updated Form -->
+                      <form
+                        id="contact-form"
+                        action="https://formspree.io/f/mqakwaze"
+                        method="POST"
+                      >
+                        <!-- Name Field -->
+                        <p>
+                          <label for="name">Name</label>
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            class="required"
+                            required
+                          />
+                        </p>
+
+                        <!-- Email Field -->
+                        <p>
+                          <label for="email">Email</label>
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="required email"
+                            required
+                          />
+                        </p>
+
+                        <!-- Subject Field -->
+                        <p>
+                          <label for="subject">Subject</label>
+                          <input
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            class="required"
+                            required
+                          />
+                        </p>
+
+                        <!-- Message Field -->
+                        <p>
+                          <label for="message">Message</label>
+                          <textarea
+                            name="message"
+                            id="message"
+                            class="required"
+                            required
+                          ></textarea>
+                        </p>
+
+                        <!-- Loader and Submit Button -->
+                        <p>
+                          <img
+                            class="ajax-loader"
+                            src="images/bckg/loader_light.gif"
+                            alt="Sending ..."
+                            style="display: none"
+                          />
+                          <input
+                            type="submit"
+                            class="btn submit"
+                            value="SEND"
+                          />
+                        </p>
+                      </form>
+
+                      <!-- Success/Failure Message -->
+                      <div
+                        id="form-response"
+                        style="display: none; margin-top: 10px"
+                      ></div>
+
+                      <script>
+                        const form = document.getElementById("contact-form");
+                        const loader = document.querySelector(".ajax-loader");
+                        const responseDiv =
+                          document.getElementById("form-response");
+
+                        form.addEventListener("submit", async function (event) {
+                          event.preventDefault(); // Prevent the default form submission
+
+                          // Show the loader
+                          loader.style.display = "block";
+
+                          // Prepare form data
+                          const formData = new FormData(form);
+
+                          try {
+                            // Submit the form via fetch
+                            const response = await fetch(form.action, {
+                              method: form.method,
+                              body: formData,
+                              headers: {
+                                Accept: "application/json",
+                              },
+                            });
+
+                            // Hide the loader
+                            loader.style.display = "none";
+
+                            if (response.ok) {
+                              // Show success message
+                              responseDiv.style.display = "block";
+                              responseDiv.style.color = "green";
+                              responseDiv.textContent =
+                                "Thank you! Your message has been sent.";
+                              form.reset(); // Clear the form
+                            } else {
+                              throw new Error("Something went wrong");
+                            }
+                          } catch (error) {
+                            // Hide the loader
+                            loader.style.display = "none";
+
+                            // Show error message
+                            responseDiv.style.display = "block";
+                            responseDiv.style.color = "red";
+                            responseDiv.textContent =
+                              "Oops! There was a problem sending your message.";
+                          }
+                        });
+                      </script>
+                    </div>
+                    <!-- .contact-form -->
+                  </div>
+                  <!-- CONTENT -->
+                </div>
+                <!-- .antiscroll-inner -->
+              </div>
+              <!-- .antiscroll-wrap -->
+
+              <!-- close link -->
+              <a class="rm-close"><span></span></a>
+              <!-- close link -->
+            </div>
+            <!-- /rm-back -->
+            <!-- CONTACT PAGE -->
+          </div>
+          <!-- /rm-right -->
+          <!-- RIGHT SIDE -->
         </div>
-      </section>
+        <!-- /rm-wrapper -->
+      </div>
+      <!-- /rm-container -->
+    </section>
+    <!-- ************************ MAIN -->
 
-      <section id="contact">
-        <div class="contact-container">
-          <span>Let's get in touch</span>
-          <h2>Contact <span>Me</span></h2>
-        </div>
+    <!-- ************************ PORTFOLIO OVERLAY -->
+    <div class="p-overlay"></div>
+    <!-- ************************ PORTFOLIO OVERLAY -->
 
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-        >
-          <input type="hidden" name="form-name" value="contact" />
+    <!-- ************************ PORTFOLIO OVERLAY -->
+    <div class="p-overlay"></div>
+    <!-- ************************ PORTFOLIO OVERLAY -->
 
-          <!-- Honeypot field to prevent spam -->
-          <p style="display: none">
-            <label>Don’t fill this out: <input name="bot-field" /></label>
-          </p>
-          <input type="text" placeholder="Full name" name="name" required />
-          <input type="email" placeholder="Email" name="'email" required />
-          <input type="text" placeholder="Subject" name="subject" required />
-          <textarea
-            name="message"
-            id="users-email"
-            placeholder="Your message..."
-            required
-          ></textarea>
+    <!-- ************************ AJAX LOADER -->
+    <div class="loader"></div>
+    <!-- ************************ AJAX LOADER -->
 
-          <button type="submit">Send Message</button>
-        </form>
+    <!-- ************************ ALERT -->
+    <div class="alert"></div>
+    <!-- ************************ ALERT -->
 
-        <div id="message-popup"><span>Message sent successfully!</span></div>
-      </section>
-
-      <footer>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="copyrights">
-          <span
-            ><i class="bx bx-copyright"></i>Stathis Kotanidis | All Rights
-            Reserved
-          </span>
-        </div>
-      </footer>
-    </div>
-
-    <script src="main.js"></script>
+    <!-- SCRIPTS -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/jquery-1.8.3.min.js"><\/script>');
+    </script>
+    <script src="js/jquery.address-1.5.min.js"></script>
+    <script src="js/antiscroll.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.imagesloaded.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="js/send-mail.js"></script>
+    <script src="js/twitterFetcher_v10_min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

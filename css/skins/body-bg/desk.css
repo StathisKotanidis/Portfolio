@@ -1,0 +1,8 @@
+/* BODY BG */
+body {
+  background-image: url(../../../images/bckg/body-bg/desk.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
